@@ -72,7 +72,7 @@ resource "aws_key_pair" "key_pair" {
 }
 
 resource "aws_instance" "instance" {
-  ami                    = "ami-0c55b159cbfafe1f0"
+  ami                    = "ami-0caef02b518350c8b"
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.key_pair.key_name
   subnet_id              = aws_subnet.public_subnet.id
